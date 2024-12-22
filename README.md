@@ -7,14 +7,14 @@ This is based on the format introduced in this blogpost: https://www.kuon.ch/pos
 ## Usage
 ```delphi
 var
- bytes: TBytes;
+ Bytes: TBytes;
  EncodedData: String;
 begin
- bytes := TBytes.Create(1, 2, 3, 4);
- EncodedData := Base24Encoding.Encode(bytes);
+ Bytes := TBytes.Create(1, 2, 3, 4);
+ EncodedData := Base24Encoding.Encode(Bytes);
 
  Writeln('Encoded data: ' + EncodedData);
 
- bytes := Base24Encoding.Decode(EncodedData);
+ Bytes := Base24Encoding.Decode(EncodedData);
 end;
 ```
